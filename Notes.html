@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes</title>
+        <link rel="stylesheet" href="notes.css">
+        <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <h1><b>Section 3 - HTML</b></h1>
+            <ul>
+                <li><b>HTML</b> - content</li>
+                <li><b>CSS</b> - how page looks</li>
+                <li><b>Javascript</b> - behavior of items on page</li>
+                <li><b>HTML tags</b> - helps format content on page</li>
+                    <ul>
+                        <li>paragraph</li>
+                        <li>bold</li>
+                        <li>italicize</li>
+                        <li>head, body, footer</li>
+                        <li>etc</li>
+                    </ul>
+                <li>Anchor element creates hyperlinks</li>
+                <li>Image element - no closing tag
+                    <ul>
+                        <li>uses source (src) atrribute to find image</li>
+                        <li>"alt" attribute can add description to broken link</li>
+                    </ul>
+                </li>
+                <li>HTML code needs to start with DOCTYPE tag to indicate type of document, then will need to have head, body, and footer tags</li>
+                <li>Add HTML tag title element to label tab of the page</li>
+                <li>HTML attributes - descriptors you can put on an HTML tag</li>
+            </ul>  
+            Example
+
+            <ol>
+                <li>Ordered List</li>
+                    <ul>
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                    </ul>
+                <li>second item</li>
+            </ol>
+
+            <ul>
+                <li>Unordered List</li>
+                <li>second item</li>
+            </ul>
+
+            <a href="http://www.google.com">google.com</a>
+        </div>
+        
+        <div>
+            <h1>Section 4 - Next Steps & Semantics</h1>
+                <ul>
+                    <li>Inline elements - share line with other elements
+                        <ul>
+                            <li>Span - can single out and group various elements for styling purposes or sharing attributes</li>
+                        </ul>
+                    </li>
+                    <li>Block elements
+                        <ul>
+                            <li>paragraph</li>
+                            <li>header</li>
+                            <li>Div - block level element that groups things together</li> 
+                        </ul>
+                    </li>
+                    <li>Other elements
+                        <ul>
+                           <li>HR (horizontal rule) - no closing tag, creates line that goes across screen</li> 
+                           <li>BR - creates a line break</li> 
+                           <li>Subscript</li> 
+                           <li>Superscript</li> 
+                        </ul>
+                    </li>
+                    <li>HTML entities [special characters]</li> 
+                    <li>Semantic markup - related to meaning of the element
+                        <ul>
+                            <li>nav</li>
+                            <li>header</li>
+                            <li>footer</li>
+                            <li>main</li>
+                            <li>etc</li>
+                        </ul>
+                    </li>     
+                    </li>
+                </ul>
+        </div>
+        
+        <div>
+            <h1>Section 5 - Forms and Tables</h1>
+                <ul>
+                    <li>Type for password should be "password"</li>
+                    <li>For radio buttons to connect, will need to have same "name" in input element. Will also need to add a value attribute</li>
+                    <li>Validations</li>
+                        <ul>
+                            <li>Client-side validation - validations shown on the site</li>
+                            <li>Server-side validation - checks inputs once they are submitted and then checks against server</li>
+                            <li>Just add "required" attribute</li>
+                        </ul>
+                </ul>
+        </div> 
+        
+        <div>
+            <h1>Section 6 - Intro to CSS</h1>
+            <ul>
+                <li>Link CSS to html using Link element</li>
+                <li>Background property vs background-color - background is more powerful, can be used on images, etc</li>
+                <li>RGB color model - all colors developed from red, green, and blue so in the syntax, will need to specify how much of each color between 0 and 255</li>
+                <li>Hexadecimal (hex) color systems - same channels as rgb but using hex syntax (0-9 and A-F). F=15 in hexadecimal. Colors stored in two digits for R, G, and B. If digits are the same, can shorten to 3 digit hex.</li>
+                <li>Font weight - 400 is normal, 700 is bold</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h1>Section 7 - CSS Selectors</h1>
+            <ul>
+                <li>Use comma "h1, h2" to apply styling to more than one tag</li>
+                <li>Descendent seletor: use space "li a" to apply styling to embedded elements, i.e., anchor tag embedded in a list</li>
+                <li>Adjacent selector: use plus "li + a" to apply styling to elements preceded by another element on the same level, i.e., header tag + paragraph</li>
+                <li>Attribute selector: element[type="x"] select based on particular attribute</li>
+                <li>Direct child: use greater than sign "div > li" to apply styling to elements one level below another element, i.e., div > list</li>
+                <li>Use "#id" if wanting to change a single item. Must give the item and id in the tag</li>
+                <li>Use ".class" if wanting to group items together. Must give all items the same class name in the tag</li>
+                <li>Pseudo classes: keyword added to selector that specifies special state of elements, starts with colon</li>
+                <li>Pseudo elements: modifiers to Selectors</li>
+                <li>Specificity: which selector wins when there are competing selectors</li>
+                    <ul>
+                        <li>ID > Class > Element</li>
+                    </ul>
+
+            </ul>
+        </div>
+        
+        <div>
+            <h1>Section 8 - CSS Box Model</h1>
+            <ul>
+                <li>Box Model</li>
+                    <ul>
+                        <li>Width and height</li>
+                        <li>Border-width (commonly use pixels for the unit), border-color, border-style 
+                            (can also just use  shorthand called border)</li>
+                        <li>Box-sizing: border-box - border is within the width specified for the text area</li>
+                        <li>Border-radius - can round out corners of border, can use % or px. 50% border makes circles</li>
+                        <li>Padding - spacing between text and border</li>
+                        <li>Margin - spacing outside of border between other elements</li>
+                        <li>Display property</li>
+                            <ul>
+                                <li>headers are block level elements, so properties take up entire line of space</li>
+                                <li>spans are inline elements, so properties do not take up entire line of space</li>
+                                <li>display property can change display of text - block level elements to be inline or inline to be block</li>
+                                <li>width, height, and margin are ignored for inline elements, padding not ignored</li>
+                                <li>All properties work for block elements</li>
+                                <li>Ems - relative units for font size based on font size of parent element, scaling properties as font size changes. It will unnecessarily increase the font size of nested items such as nested lists</li>
+                                <li>Rems (root ems) - derive font size from root element instead of parent element preceding next element</li>
+                            </ul>
+                    </ul>
+            </ul>
+        </div>
+        <div>
+            <h1>Section 9 - Other CSS Properties</h1>
+            <ul>
+                <li>rgba affects just background color or other propertyy specified</li>
+                <li>opacity affects all child elements</li>
+                <li>Position - sets how element is positioned in document, affects top, right, bottom, and left properties</li>
+                    <ul>
+                        <li>static is default</li>
+                        <li>can specify property, duration, timing function, and delay</li>
+                        <li>Transform - scale, rotate, translate, skew</li>
+                    </ul>
+                <li>Background-image (include url of the image), background-size, background-position, background, no-repeat</li>    
+                <li>Font-family, can use font file as part of webpage</li>    
+                <li>If put spans or images on diff lines, there will be a white space in between vs putting them back to back</li>    
+            </ul>
+        </div>
+        <div>
+            <h1>Section 10 - Flex Box</h1>
+            <ul>
+                <li>Flexbox - default axis goes from left to right</li>
+                <li>Flexbox-direction: row is default, same as above. Can do row-reverse</li>
+                <li>Justify-content: along the main axis, space-between, space-around, flex-start/end, row/column reverse</li>
+                <li>Flex-wrap - determines whether text will wrap</li>
+                <li>Cross-axis can be horizontal or vertical, opposite of main axis, depending on if row or column selected</li>
+                <li>Align-items: cross axis, could be horizontal or vertical depending on if row or column selected (flex-direction)</li>
+                <li>Justify-content is along main axis and align-items is along cross axis</li>
+                <li>Default main axis is left to right, default cross axis is top to bottom</li>
+                <li>Flex-wrap: change direction of cross axis</li>
+                <li>Align-content: space-between, space-around, flex start/end, etc (only works when there is flex-wrap)</li>
+                <li>Align-items: baseline, lines up text times</li>
+                <li>Align-self - property added to individual items in flex container</li>
+                <li>Flex-basis - determines intitial size of element before it's placed in. Replaces width when in a row</li>
+                <li>Flex-grow - accepts unit-less number</li>
+                <li>Flex-shrink - controls how much elements shrink when there's not enough space</li>
+                <li>Flex shorthand - flex grow + flex shrink + flex basis</li>
+                <li>Responsive design - designing single website that is able to adjust to different screen sizes on different devices</li>
+                <li>Media queries - features that can be written in css to change styles depending on screen parameters</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Section 12 - Bootstrap</h1>
+                <ul>Bootstrap - Third party css code that can be incorporated to own code</ul>
+                <ul>CDN (content delivery network)- can use hosted css online to access css code instead of downloading </ul>
+
+        </div>
+    </body>
+    <footer>
+        <a href="stinky.html">§&nbsp;§</a>
+    </footer>
+</html>
+
